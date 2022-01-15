@@ -1,0 +1,78 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.delete-popup-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+  overflow-x: hidden;
+
+  background-color: #fff;
+  padding: 3rem 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.delete--header {
+  font-size: 2.8rem;
+  color: #324152;
+  margin-bottom: 2rem;
+}
+
+.delete--text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #67727e;
+  margin-bottom: 2rem;
+}
+
+.delete--btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn--delete-decline,
+.btn--delete-comfirm {
+  width: 47.5%;
+  height: 5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn--delete-decline:hover,
+.btn--delete-comfirm:hover {
+  opacity: 0.8;
+}
+
+.btn--delete-decline {
+  background-color: #67727e;
+}
+
+.btn--delete-comfirm {
+  background-color: hsl(358, 79%, 66%);
+}
+
+@media (max-width: 50em) {
+  .delete-popup-window {
+    width: 35rem;
+    padding: 3rem 3rem;
+  }
+}

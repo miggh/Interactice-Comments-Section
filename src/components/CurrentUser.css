@@ -1,0 +1,140 @@
+.current-user,
+.new-reply {
+  width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.current-user {
+  margin-top: 6rem;
+}
+
+.new-reply {
+  margin-top: -1.5rem;
+}
+
+.current-user--img {
+  width: 5rem;
+}
+
+.current-user--form {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.current-user--comment {
+  width: 50rem;
+  max-width: 50rem;
+  min-width: 50rem;
+  min-height: 15rem;
+  padding: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  border: 1px #eaecf1 solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn--send {
+  width: 10rem;
+  height: 5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #5457b6;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 1.2px 1.2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn--send:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 50em) {
+  .current-user,
+  .new-reply {
+    width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    padding-bottom: 8rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .current-user--comment {
+    width: 45rem;
+    max-width: 45rem;
+    min-width: 45rem;
+    min-height: 15rem;
+    padding: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.6rem;
+    border: 1px #eaecf1 solid;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn--send {
+    position: absolute;
+    right: 4rem;
+    bottom: 2rem;
+  }
+
+  .current-user.new-reply {
+    padding-bottom: 8rem;
+  }
+
+  .current-user.new-reply .btn--send {
+    right: 5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .current-user,
+  .new-reply {
+    width: 100%;
+  }
+
+  .new-reply {
+    margin-right: 0;
+  }
+
+  .current-user--comment {
+    width: 175%;
+    max-width: 175%;
+    min-width: 175%;
+  }
+
+  .new-reply .current-user--comment {
+    width: 25rem;
+    max-width: 25rem;
+    min-width: 25rem;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .current-user--comment {
+    width: 120%;
+    max-width: 120%;
+    min-width: 120%;
+  }
+  .new-reply .current-user--comment {
+    width: 22.5rem;
+    max-width: 22.5rem;
+    min-width: 22.5rem;
+  }
+}
